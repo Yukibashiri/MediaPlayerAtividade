@@ -68,15 +68,15 @@ void pesquisar_keyword(registro *db){
     do{
       printf ("\n Pesquisar por:  ");
       gets(pesquisa); // Recebe a string que sera comparada no registro
-      strupr(pesquisa); // Transforma todos os caracteres da string em letras maiusculas.
     }while (pesquisa == NULL);
-      printf ("Filtro: <1> Geral, <2> Descrição, <3> Cidade: "); // Opcao de filtro, utilizada para seleção de estrutura no switch-case.
-      filtro = getch();
-      printf ("\n\n\n\n");
-      t_start = time(NULL); // Inicia o cronometro.
-      switch(filtro){ // CADA CASE REPRESENTA UMA OPÇÃO DE FILTRO, LOGO A UNICA MUDANÇA É NA CONDIÇÃO DA DECISÃO DA BUSCA,
+    strupr(pesquisa); // Transforma todos os caracteres da string em letras maiusculas.
+    printf ("Filtro: <1> Geral, <2> Descrição, <3> Cidade: "); // Opcao de filtro, utilizada para seleção de estrutura no switch-case.
+    filtro = getch();
+    printf ("\n\n\n\n");
+    t_start = time(NULL); // Inicia o cronometro.
+    switch(filtro){ // CADA CASE REPRESENTA UMA OPÇÃO DE FILTRO, LOGO A UNICA MUDANÇA É NA CONDIÇÃO DA DECISÃO DA BUSCA,
         case 50:
-          for (i=0;i<LIMITE;i++){ //
+            for (i=0;i<LIMITE;i++){ //
             if (strstr((db+i)->descricao,pesquisa) != 0){ // SÓ IRA PROCURAR NAS DESCRIÇÕES
               printf ("\n        ID:  %d.\n Descrição:  %s.\n    Cidade:  %s.\n\n",(db+i)->identificador,(db+i)->descricao,(db+i)->cidade);
               resultados_encontrados++;
@@ -99,8 +99,8 @@ void pesquisar_keyword(registro *db){
             }
           }
           break;
-      }
-      t_end = time(NULL); // Para o cronometro
-      tempo = difftime(t_end, t_start); // Arredonda para cima o obtido pelo cronometro.
-      printf ("\n %d Resultados encontrados. Tempo de busca: %f segundos.\n",resultados_encontrados,tempo); // Mostra o resultado.
+    }
+    t_end = time(NULL); // Para o cronometro
+    tempo = difftime(t_end, t_start); // Arredonda para cima o obtido pelo cronometro.
+    printf ("\n %d Resultados encontrados. Tempo de busca: %f segundos.\n",resultados_encontrados,tempo); // Mostra o resultado.
 }
