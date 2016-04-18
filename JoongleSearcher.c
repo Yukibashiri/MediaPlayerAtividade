@@ -9,7 +9,7 @@ void main (void)
     registro Reg_Hoteis[LIMITE]; // cria a estrutura para registrar os hoteis.
     db_example(&Reg_Hoteis);   // chama o procedimento que faz a população da estrutura.
     int decisao;          // Variavel utilizada para guardar o valor com a opção do menu informado pelo usuario.
-    do{
+    do{ 
         printf ("\n           JOONGLE! SEARCHER     \n");
         printf (" ____________________________________\n");
         printf ("|                                    | \n");
@@ -20,20 +20,20 @@ void main (void)
         decisao = getch();
         system("cls");
         switch(decisao){
-            case 49:
+            case 49:                // Procedimento de busca por identificador
                 pesquisar_id(&Reg_Hoteis);
                 break;
-            case 50:
+            case 50:                 // Procedimento de busca por palvra chave
                 pesquisar_keyword(&Reg_Hoteis);
                 break;
-            case 51:
-                info();
+            case 51:                // Procedimento que mostra as informações sobre o case.
+                info();             
                 break;
-            case 0x1b:
+            case 0x1b:              // Encerra o loop e termina o programa
                 system("EXIT");
                 break;
         }
-        system("PAUSE");
-        system("cls");
-    }while (decisao != 0x1b);
+        system("PAUSE");          // "congela" o programa
+        system("cls");           // limpa tela
+    }while (decisao != 0x1b);   // condição para que o loop termine.
 }
