@@ -1,15 +1,14 @@
 #include "joongle_db.h"
 #include "procedures.c"
 
-// FUN��O PRINCIPAL//
+// FUNÇÃO PRINCIPAL//
 void main (void)
 {
-    setlocale(LC_ALL,"Portuguese");
-    registro Reg_Hoteis[LIMITE];
-    db_example(&Reg_Hoteis);
-    int decisao,id;
-    int i;
-    char pesquisa[50];
+    system("COLOR F0"); // Muda o background para brancco e letras para preto.
+    setlocale(LC_ALL,"Portuguese"); // permite acentuação.
+    registro Reg_Hoteis[LIMITE]; // cria a estrutura para registrar os hoteis.
+    db_example(&Reg_Hoteis);   // chama o procedimento que faz a população da estrutura.
+    int decisao;          // Variavel utilizada para guardar o valor com a opção do menu informado pelo usuario.
     do{
         printf ("\n           JOONGLE! SEARCHER     \n");
         printf (" ____________________________________\n");
