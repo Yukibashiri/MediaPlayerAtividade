@@ -7,9 +7,9 @@
 #include <string.h> // trabalhar ocm strings
 #include <time.h> // utilizado para calcular o tempo de pesquisa.
 #define caso "Joongle !"
-#define aluno "Mario Dami„o Caparroz Remistico Junior"
-#define professor "Alessandro Miranda GonÁalves"
-#define LIMITE 15  // Numero de registros criados.
+#define aluno "Mario Dami√£o Caparroz Remistico Junior"
+#define professor "Alessandro Miranda Gon√ßalves"
+#define LIMITE 50  // Numero de registros criados.
 typedef struct{
         int identificador;
         char descricao[100];
