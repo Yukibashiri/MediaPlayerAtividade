@@ -1,0 +1,39 @@
+-- WebService -- 
+
+> Filtros
+> Endpoint Posição do Motoboy
+> Endpoint para enviar Registro do Firebase
+> Endpoints para requests de pedidos a partir dos filtros
+> Endpoint para Push notification a partir do ID do usuario e ID do pedido
+> Endpoint para Push notification a partir do ID do  e ID do pedido
+> Endpoint para Push notification para todos os usuarios (como mensagens de promoções)
+
+-- Painel -- 
+
+> Busca por pedidos --- Ok.
+> Busca por usuario
+> Icones (moto e carro) --- Ok
+> Permitir re-alocar pedido para outro motoboy -- andamento
+> Sistema de log para controle de alterações em pedidos
+> Painel para enviar Push Notification para todos os clientes ou especifico (como mensagens de promoção)
+> Relatorios com melhores filtros
+> Side Menu - na tela de criar pedidos (Usuario e Admin)
+> Tirar o ponto fantasma do mapa (Em ver pedidos, ponto aleatorio aparece)
+
+
+-- Aplicativo --
+
+> Utilizar API Place do google, para autocomplete do endereço na criação de pedidos -- ok
+> Icones de carro e moto nos serviços (Usuario)
+> Criar filtros na tela de extrato/historico (Usuario e Motoboy)
+> Modificar tela de finalizar pedido para o motoboy poder inserir um comentario (Ex: Entregue para João, RG xxx-xx.)
+> Criar parametro de parada/inicio do serviço de Monitoramento via GPS. -- ajustar timeout API
+> Notificações de status dos pedidos (Usuario e Motoboy)
+> Comunicar com o endpoint do registro do firebase -- andamento
+> Adaptar o código para a nova estrutura do JSON    --- Cancelado!
+
+
+-- Banco de Dados --
+
+> Criar uma tabela para receber o id do firebase para a aplicação do usuario logado (associar aplicação com Usuário logado).
+ 
