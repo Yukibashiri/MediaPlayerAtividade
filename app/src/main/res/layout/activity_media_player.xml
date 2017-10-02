@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ash_grey"
+    tools:context="com.exercicios.projects.techined.mediaplayer.MediaPlayer">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="243dp"
+        android:layout_height="215dp"
+        app:srcCompat="@drawable/adele"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="75dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/seekBar3"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="243dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="28dp"
+        android:text="Xuxa M"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_light"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="220dp"
+        android:layout_height="15dp"
+        tools:layout_editor_absoluteY="332dp"
+        tools:layout_editor_absoluteX="82dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tempo"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_alignTop="@+id/seekBar3"
+        android:layout_toEndOf="@+id/seekBar3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tempo"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_toStartOf="@+id/seekBar3"
+        android:layout_alignBottom="@+id/seekBar3" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_play"
+        tools:layout_editor_absoluteY="355dp"
+        tools:layout_editor_absoluteX="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginEnd="27dp" />
+
+
+</RelativeLayout>
